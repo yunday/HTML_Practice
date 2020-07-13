@@ -1,0 +1,24 @@
+.item{
+    color: blue;
+}
+.top{
+    background: red;
+    height: 100px;
+}
+.mid{
+    background: blue;
+    height: 100px;
+}
+.bot{
+    background: yellow;
+    height: 100px;
+}
+.like{
+    background: red;
+}
+.sub{
+    background: blue;
+}
+.comment{
+    background: yellow;
+}

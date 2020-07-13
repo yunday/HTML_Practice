@@ -1,0 +1,115 @@
+<!-- 웹사이트로 변환하려면 Alt + B -->
+<!DOCTYPE html>
+<html lang="en">    <!--전체적인 틀-->
+<head>  <!--html 정보 저장-->
+    <title>yunday html 연습</title>
+    <link href="style.css" rel="stylesheet"
+    type="text/css"/>
+    <!-- link: 다른곳에 저장돼있는 파일을 html문서에 불러옴 -->
+    <!-- href: 파일이 어디에 위치하는지 -->
+    <!-- rel, type : 이 파일이 어떤 타입인지 -->
+    <meta charset="UTF-8">
+    <meta name="description" content="yunday html 연습">
+    <!-- 이 웹사이트가 어떤 정보를 담고 있는지 더 자세하게 알려주는 태그 (공유가 될때 소개 뜨는거)-->
+    <!-- <style>
+        .item{
+            color: red;
+        }
+    </style>    이 안에서 바로 css 코드를 쓸 수 있도록 하게 함 -->
+    <!-- 여기서는 style.css 파일 불렀으므로 필요없음 -->
+</head>
+<body>
+    <div class="item">안녕 난 종유니꺼</div>    <!-- style의 item으로 class 지정 후 문자 쓸 수 있음 -->
+    <!-- <div></div> 는 태그라고 함 -->
+    <!-- class="box" 는 속성이라함. 이걸로 css스타일링 가능 -->
+    <!-- 태그 + 속성 = element -->
+
+
+    <!-- 텍스트 관련 태그들 -->
+    <h1>안녕하세요</h1>
+    <h2>안녕하세요</h2>
+    <h3>안녕하세요</h3>
+    <h4>안녕하세요</h4>
+    <h5>안녕하세요</h5>
+    <h6>안녕하세요</h6>
+
+    <b>굵은 글씨</b>
+    <i>기울은 글씨</i>
+    <p>안녕하세요 저는 yunday입니다</p>
+
+
+    <!-- 미디어 관련 태그들 -->
+    <img src="https://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/72972032_2571324683078882_854807351702022450_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=102&_nc_ohc=p8wIBrBzcNQAX-m7LO5&oh=511ed4ae0b3ab1fc30c2c5b8a5194355&oe=5F18AE5B"/>
+    <video src="https://youtu.be/50JOpxN0554"
+    controls ></video>
+
+
+    <!-- 링크 태그 -->
+    <a href="google.com">구글</a>
+    <!-- href : 링크이고 구글은 링크의 이름 -->
+    <a href="facebook.com" target="_blank">페이스북</a>
+    <!-- target="_blank" : 새창 생성해서 링크로 가게함 -->
+
+
+    <!-- 테이블 태그 -->
+    <table border="1"> <!-- table은 thead, tbody 두 가지 섹션으로 나뉨 -->
+        <!-- border 속성으로 표의 테두리를 그려줌 -->
+        <thead> <!-- 칼럼은 몇개있고 각 칼럼의 이름은 뭔지 -->
+            <tr>    <!-- 이름, 나이라는 칼럼 두 개 생김 -->
+                <th>이름</th>
+                <th>나이</th>
+            </tr>
+        </thead>
+        <tbody> <!-- 표의 내용 -->
+            <tr>
+                <td>제니</td>
+                <td>25살</td>
+            </tr>
+            <tr>
+                <td>로제</td>
+                <td>24살</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- 목록 태그 -->  <!-- black 포인트를 만들어줌 -->
+    <ol>    <!-- ordered list (순서매김) -->
+        <li>제니</li>   <!-- 리스트 -->
+        <li>로제</li>
+    </ol>
+
+    <ul>    <!-- unordered list (순서안매김) -->
+        <li>제니</li>
+        <li>로제</li>
+    </ul>
+
+    
+    <!-- 구역을 나누는 태그 (여러 구역을 나누고 싶을 때 씀) -->
+    <div class="top">상단</div> <!-- div는 한 줄 전체 공간을 차지 -->
+    <div class="mid">중단</div>
+    <div class="bot">하단</div>
+    <span class="like">좋아요</span>    <!-- span은 자기 내용물 만큼의 공간만 차지 -->
+    <span class="sub">구독</span>
+    <span class="comment">댓글</span>
+
+
+    <!-- 인풋 태그 (user에게 정보를 받아야할 때 씀) -->
+    텍스트 <input type="text"/>
+    체크박스 <input type="checkbox"/>
+    라디오 <input type="radio"/>
+    색깔 <input type="color"/>
+    여러 문장 <textarea></textarea>
+    <!-- 여러 옵션 제공하고 dropdown ? -->
+    드랍다운 <select name="name">
+        <option value="제니">제니</option>
+        <option value="로제">로제</option>
+    </select>
+    <!-- 로그인 처럼 만들기 -->
+    <form>
+        <input type="email" placeholder="이메일"/>  <!-- placeholder란 텍스트 박스 안에 default값-->
+        <input type="password" placeholder="비밀번호"/>
+        <button type="submit">로그인</button>
+    </form>
+</body>
+</html>
